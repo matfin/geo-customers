@@ -12,7 +12,7 @@ const config: IAppConfig = {
     latitude: parseFloat(process.env.LAT) || 53.339428,
     longitude: parseFloat(process.env.LNG) || -6.257664,
   },
-  distanceKm: 100,
+  distanceKm: parseInt(process.env.DISTANCE_KM) || 100,
 };
 
 export default config;

@@ -18,7 +18,7 @@ const run = async(): Promise<void> => {
     });
 
   // Then apply filtering 
-  const filtered = remapped.filter((item) => item.distance <= 100);
+  const filtered = remapped.filter((item) => item.distance <= distanceKm);
 
   // Then apply sorting by user ID
   const sorted = filtered.sort((a, b) => a.customer.user_id - b.customer.user_id );
